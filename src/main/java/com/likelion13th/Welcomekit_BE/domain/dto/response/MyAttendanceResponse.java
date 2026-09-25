@@ -1,6 +1,7 @@
 package com.likelion13th.Welcomekit_BE.domain.dto.response;
 
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 
 import com.likelion13th.Welcomekit_BE.domain.enums.AttendanceStatus;
 
@@ -12,4 +13,5 @@ import lombok.Setter;
 public class MyAttendanceResponse {
 	private LocalDate date;
 	private AttendanceStatus attendanceStatus;
+	private LocalDateTime attendanceTime;
 }
