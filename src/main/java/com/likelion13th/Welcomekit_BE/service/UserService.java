@@ -117,6 +117,7 @@ public class UserService {
 		getMyInfoResponse.setStudentName(user.getStudentNum());
 		getMyInfoResponse.setName(user.getUserName());
 		getMyInfoResponse.setTeamName(user.getTeam() != null ? user.getTeam().getTeamName() : null);
+		getMyInfoResponse.setUserType(user.getUserType());
 		return getMyInfoResponse;
 	}
 

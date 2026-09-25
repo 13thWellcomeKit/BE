@@ -46,6 +46,13 @@ public class Attendance {
 	@Column(name = "status", nullable = false)
 	private AttendanceStatus status;
 
+	// 운영진이 상태를 수정한 경우에만 기록 (학번)
+	@Column(name = "modified_by")
+	private String modifiedBy;
+
+	@Column(name = "modified_at")
+	private LocalDateTime modifiedAt;
+
 	@Override
 	public String toString() {
 		return "Attendance{" +
